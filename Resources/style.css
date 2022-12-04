@@ -1,0 +1,110 @@
+/* :root {
+    --spacing-1: 8px;
+    --spacing-2: 12px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+    --border-radius: 12px;
+    --font-color: #000000;
+} */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    /* max-width: 900px; */
+    margin: 0;
+    /* display: flex;
+    flex-direction: column; */
+}
+header{
+    padding: 30px;
+    text-align: center;
+    font-size: 175%;
+    background-color: lightblue;
+    
+}
+nav{
+    
+    /* z-index: 3; */
+    /* position: ; */
+    /* padding-bottom: 5%; */
+    background-color: #323232;
+    color: white;
+    overflow: hidden;
+    /* make sure to have top: 0%, which will help stick nav at the top
+    of the screen when the page is scrolling */
+    position: sticky;
+    top: 0%;
+}
+.sticky{
+    /* position: sticky; */
+    top: 0;
+    width: 100%;
+}
+.content{
+    padding: 16px;
+}
+.sticky + .content{
+    padding-top: 60px;
+    
+
+}
+
+.navigation-items{
+    /* float: left;
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    padding: 14px 16px;
+    margin-left: auto; */
+    /* position: fixed; */
+    
+}
+.navigation-item{
+    float: left;
+    display: block;
+    /* color: ivory; */
+    text-align: center;
+    list-style-type: none;
+    padding: 14px 16px;
+    margin-left: auto;
+
+}
+.navigation-item a{
+    color: ivory;
+    /* color: #BABABA; */
+    text-decoration: none;
+    font-weight: 600;
+}
+.navigation-item :hover{
+    background-color: aqua;
+    color: darkblue;
+}
+header h2 a{
+    color: #323232;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 150%;
+}
+.about-me-container{
+    display: flex;
+}
+/* .potrait{
+    width: auto;
+    height: auto;
+    flex-shrink: 50;
+    border-radius: 50%;
+} */
+#portrait{
+    border-radius: 40%;
+    height: 200px;
+}
+section{
+    padding: 2.5% 0;
+}
+summary{
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
+.project-image{
+    width: 50%;
+}

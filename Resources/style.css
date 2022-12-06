@@ -15,6 +15,8 @@ body{
     margin: 0;
     /* display: flex;
     flex-direction: column; */
+    background-color: aliceblue;
+    line-height: 1.5em;
 }
 header{
     padding: 30px;
@@ -80,14 +82,31 @@ nav{
     background-color: aqua;
     color: darkblue;
 }
+#button{
+    background-color: limegreen;
+    /* background-color: blue; */
+    border-radius: 50%;
+    transition: 0.5s;
+    padding: 0.35em 1.50em;
+}
+#button:hover{
+    background-color: white;
+}
 header h2 a{
     color: #323232;
     list-style-type: none;
     text-decoration: none;
     font-size: 150%;
 }
+#about-me{
+    
+    width: 100%;
+    border-bottom: 0.175em solid #070035;
+    padding-bottom: 1.5em;
+}
 .about-me-container{
     display: flex;
+    background-color: hsla(182, 100%, 44%, 0.36);
 }
 /* .potrait{
     width: auto;
@@ -102,9 +121,61 @@ header h2 a{
 section{
     padding: 2.5% 0;
 }
+#projects{
+    border-bottom: 0.175em solid #070035;
+    padding-bottom: 1.5em;
+}
 summary{
     list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
 }
 .project-image{
     width: 50%;
+}
+#skills{
+    text-align: center;
+    border-bottom: 0.175em solid #070035;
+    padding-bottom: 1.5em;
+}
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.skill-card{
+    display: flex;
+    border: 2px solid #323232;
+    border-radius: 1em;
+    margin: 0.5em;
+    background-color: hsla(182, 100%, 44%, 0.36);
+}
+.skill-card figure{
+    justify-items: center;
+}
+figure{
+    display: block;
+}
+figcaption{
+    display: block;
+}
+
+.skill-card img{
+    display: flex;
+    align-items: center;
+    min-height: 4em;
+    max-height: 4em;
+    min-width: 4em;
+    max-width: 4em;
+    height: auto;
+}
+
+footer{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding:30px 100px;
+    
+    
 }

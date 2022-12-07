@@ -15,23 +15,26 @@ body{
     margin: 0;
     /* display: flex;
     flex-direction: column; */
-    background-color: aliceblue;
+    background-color: rgb(240, 248, 255);
     line-height: 1.5em;
 }
 header{
     padding: 30px;
     text-align: center;
     font-size: 175%;
-    background-color: lightblue;
+    background-color: rgb(173, 216, 230);
     
 }
+
+/* ------ Navigation ------ */
+
 nav{
     
     /* z-index: 3; */
     /* position: ; */
     /* padding-bottom: 5%; */
-    background-color: #323232;
-    color: white;
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
     overflow: hidden;
     /* make sure to have top: 0%, which will help stick nav at the top
     of the screen when the page is scrolling */
@@ -73,40 +76,45 @@ nav{
 
 }
 .navigation-item a{
-    color: ivory;
+    color: rgb(255, 255, 240);
     /* color: #BABABA; */
     text-decoration: none;
     font-weight: 600;
 }
 .navigation-item :hover{
-    background-color: aqua;
-    color: darkblue;
+    background-color: rgb(0, 255, 255);
+    color: rgb(0, 0, 139);
 }
 #button{
-    background-color: limegreen;
+    background-color: rgb(50, 205, 50);
     /* background-color: blue; */
     border-radius: 50%;
     transition: 0.5s;
     padding: 0.35em 1.50em;
 }
 #button:hover{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 header h2 a{
-    color: #323232;
+    color: rgb(50, 50, 50);
     list-style-type: none;
     text-decoration: none;
     font-size: 150%;
 }
+
+/* ------ Main Body ------ */
+
+
+        /* ------ About Me Section ------ */
 #about-me{
-    
+    /* display: flex; */
     width: 100%;
-    border-bottom: 0.175em solid #070035;
+    border-bottom: 0.175em solid rgb(7, 0, 53);
     padding-bottom: 1.5em;
 }
 .about-me-container{
     display: flex;
-    background-color: hsla(182, 100%, 44%, 0.36);
+    background-color: rgba(0, 217, 224, 0.36);
 }
 /* .potrait{
     width: auto;
@@ -121,19 +129,36 @@ header h2 a{
 section{
     padding: 2.5% 0;
 }
+
+        /* ------Projects Section ------ */
+
 #projects{
-    border-bottom: 0.175em solid #070035;
+    border-bottom: 0.175em solid rgb(7, 0, 53);
     padding-bottom: 1.5em;
 }
 summary{
     list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+
 }
+.project-title:hover{
+    cursor: pointer;
+    text-decoration:underline;
+}
+.project:hover p{
+    cursor: default;
+}
+.project:hover img{
+    cursor: default;
+}
+
 .project-image{
     width: 50%;
 }
+
+        /* ------ Skills Section ------ */
 #skills{
     text-align: center;
-    border-bottom: 0.175em solid #070035;
+    border-bottom: 0.175em solid rgb(7, 0, 53);
     padding-bottom: 1.5em;
 }
 .skills-container{
@@ -144,10 +169,10 @@ summary{
 }
 .skill-card{
     display: flex;
-    border: 2px solid #323232;
+    border: 2px solid rgb(50, 50, 50);
     border-radius: 1em;
     margin: 0.5em;
-    background-color: hsla(182, 100%, 44%, 0.36);
+    background-color: rgba(0, 217, 224, 0.36);
 }
 .skill-card figure{
     justify-items: center;
@@ -168,9 +193,11 @@ figcaption{
     max-width: 4em;
     height: auto;
 }
+/*------ End of Main Body ------- */
 
+/* ------ Footer Section ----- */
 footer{
-    background-color: lightblue;
+    background-color: rgb(173, 216, 230);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -178,4 +205,16 @@ footer{
     padding:30px 100px;
     
     
+}
+
+/* ------- Media Query ------ */
+
+@media only screen and (max-width: 320px){
+    .about-me-container{
+        display: block;
+
+    }
+    .project-image{
+        max-width: 100%;
+    }
 }

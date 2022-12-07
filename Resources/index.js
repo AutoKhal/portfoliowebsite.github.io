@@ -4,9 +4,6 @@ let nav = document.getElementsByTagName("nav");
 let sticky = nav.offsetTop;
 
 
-window.onload = function mySliderOff() {
-    document.getElementsByClassName("slider").disabled = true;
-}
 
 
 
